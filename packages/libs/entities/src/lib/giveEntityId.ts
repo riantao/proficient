@@ -1,5 +1,6 @@
 import { Modify } from "@proficient/types";
-import { generateId } from "@proficient/utils";
+
+import { generateId } from "./generateId";
 
 export const giveEntityId = <
 	EntityInfo extends { id?: string },
