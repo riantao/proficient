@@ -1,0 +1,29 @@
+{
+  "$schema": "..\\..\\..\\..\\node_modules\\nx\\schemas\\project-schema.json",
+  "sourceRoot": "packages/libs/features/specials/src",
+  "projectType": "library",
+  "tags": [
+    "type:feature",
+    "scope:external",
+    "domain:client"
+  ],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "packages/libs/features/specials/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/packages/libs/features/specials"],
+      "options": {
+        "jestConfig": "packages/libs/features/specials/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  }
+}
