@@ -15,7 +15,7 @@ export const useResourcesRepo = <
 >({
 	httpClient,
 	config,
-	urlEndpoint,
+	url,
 	name
 }: ServicesDependencies): ResourceRepo<Request, Response, DeleteResponse> => {
 	const [error, setError] = useState<HttpError | undefined>(undefined);
@@ -24,14 +24,14 @@ export const useResourcesRepo = <
 	// TODO: Add logging
 	const createResource = useCallback(async (info: Request, cb?: (data: Response) => void): Promise<Response | void> => {
 		try {
-			const res = await httpClient.post<Response>(urlEndpoint, info, config);
+			const res = await httpClient.post<Response>(url, info, config);
 
 			cb?.(res.data);
 			return res.data;
 		} catch (e: any) {
 			return setError(handleHttpError(e));
 		}
-	}, [config, handleHttpError, httpClient, urlEndpoint]);
+	}, [config, handleHttpError, httpClient, url]);
 
 	const fetchResource = useCallback(async (url: string): Promise<Response[]> => {
 		try {
@@ -57,7 +57,7 @@ export const useResourcesRepo = <
 		cb?: (data: Response) => void
 	): Promise<Response | void> => {
 		try {
-			const res = await httpClient.put<Response>(`${urlEndpoint}/${info.id}`, info, config);
+			const res = await httpClient.put<Response>(`${url}/${info.id}`, info, config);
 
 			cb?.(res.data);
 
@@ -65,11 +65,11 @@ export const useResourcesRepo = <
 		} catch (e: any) {
 			return setError(handleHttpError(e));
 		}
-	}, [config, handleHttpError, httpClient, urlEndpoint]);
+	}, [config, handleHttpError, httpClient, url]);
 
 	const deleteResource = useCallback(async (id: string, cb?: (data: DeleteResponse) => void): Promise<DeleteResponse | void> => {
 		try {
-			const res = await httpClient.delete<DeleteResponse>(`${urlEndpoint}/${id}`, config);
+			const res = await httpClient.delete<DeleteResponse>(`${url}/${id}`, config);
 
 			cb?.(res.data);
 
@@ -77,7 +77,7 @@ export const useResourcesRepo = <
 		} catch (e: any) {
 			return setError(handleHttpError(e));
 		}
-	}, [config, handleHttpError, httpClient, urlEndpoint]);
+	}, [config, handleHttpError, httpClient, url]);
 
 	return Object.freeze({
 		error,
