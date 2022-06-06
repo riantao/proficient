@@ -1,33 +1,33 @@
 {
-  "$schema": "..\\..\\..\\node_modules\\nx\\schemas\\project-schema.json",
-  "sourceRoot": "packages/libs/exceptions/src",
-  "projectType": "library",
-  "targets": {
-    "build": {
-      "executor": "@nrwl/js:tsc",
-      "outputs": ["{options.outputPath}"],
-      "options": {
-        "outputPath": "dist/packages/libs/exceptions",
-        "main": "packages/libs/exceptions/src/index.ts",
-        "tsConfig": "packages/libs/exceptions/tsconfig.lib.json",
-        "assets": ["packages/libs/exceptions/*.md"]
-      }
-    },
-    "lint": {
-      "executor": "@nrwl/linter:eslint",
-      "outputs": ["{options.outputFile}"],
-      "options": {
-        "lintFilePatterns": ["packages/libs/exceptions/**/*.ts"]
-      }
-    },
-    "test": {
-      "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/packages/libs/exceptions"],
-      "options": {
-        "jestConfig": "packages/libs/exceptions/jest.config.ts",
-        "passWithNoTests": true
-      }
-    }
-  },
-  "tags": []
+	"$schema": "..\\..\\..\\node_modules\\nx\\schemas\\project-schema.json",
+	"sourceRoot": "packages/libs/exceptions/src",
+	"projectType": "library",
+	"targets": {
+		"build": {
+			"executor": "@nrwl/js:tsc",
+			"outputs": ["{options.outputPath}"],
+			"options": {
+				"outputPath": "dist/packages/libs/exceptions",
+				"main": "packages/libs/exceptions/src/index.ts",
+				"tsConfig": "packages/libs/exceptions/tsconfig.lib.json",
+				"assets": ["packages/libs/exceptions/*.md"]
+			}
+		},
+		"lint": {
+			"executor": "@nrwl/linter:eslint",
+			"outputs": ["{options.outputFile}"],
+			"options": {
+				"lintFilePatterns": ["packages/libs/exceptions/**/*.ts"]
+			}
+		},
+		"test": {
+			"executor": "@nrwl/jest:jest",
+			"outputs": ["coverage/packages/libs/exceptions"],
+			"options": {
+				"jestConfig": "packages/libs/exceptions/jest.config.ts",
+				"passWithNoTests": true
+			}
+		}
+	},
+	"tags": []
 }

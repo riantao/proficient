@@ -1,33 +1,33 @@
 {
-  "$schema": "..\\..\\..\\node_modules\\nx\\schemas\\project-schema.json",
-  "sourceRoot": "packages/libs/hooks/src",
-  "projectType": "library",
-  "targets": {
-    "build": {
-      "executor": "@nrwl/js:tsc",
-      "outputs": ["{options.outputPath}"],
-      "options": {
-        "outputPath": "dist/packages/libs/hooks",
-        "main": "packages/libs/hooks/src/index.ts",
-        "tsConfig": "packages/libs/hooks/tsconfig.lib.json",
-        "assets": ["packages/libs/hooks/*.md"]
-      }
-    },
-    "lint": {
-      "executor": "@nrwl/linter:eslint",
-      "outputs": ["{options.outputFile}"],
-      "options": {
-        "lintFilePatterns": ["packages/libs/hooks/**/*.ts"]
-      }
-    },
-    "test": {
-      "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/packages/libs/hooks"],
-      "options": {
-        "jestConfig": "packages/libs/hooks/jest.config.ts",
-        "passWithNoTests": true
-      }
-    }
-  },
-  "tags": []
+	"$schema": "..\\..\\..\\node_modules\\nx\\schemas\\project-schema.json",
+	"sourceRoot": "packages/libs/hooks/src",
+	"projectType": "library",
+	"targets": {
+		"build": {
+			"executor": "@nrwl/js:tsc",
+			"outputs": ["{options.outputPath}"],
+			"options": {
+				"outputPath": "dist/packages/libs/hooks",
+				"main": "packages/libs/hooks/src/index.ts",
+				"tsConfig": "packages/libs/hooks/tsconfig.lib.json",
+				"assets": ["packages/libs/hooks/*.md"]
+			}
+		},
+		"lint": {
+			"executor": "@nrwl/linter:eslint",
+			"outputs": ["{options.outputFile}"],
+			"options": {
+				"lintFilePatterns": ["packages/libs/hooks/**/*.ts"]
+			}
+		},
+		"test": {
+			"executor": "@nrwl/jest:jest",
+			"outputs": ["coverage/packages/libs/hooks"],
+			"options": {
+				"jestConfig": "packages/libs/hooks/jest.config.ts",
+				"passWithNoTests": true
+			}
+		}
+	},
+	"tags": []
 }

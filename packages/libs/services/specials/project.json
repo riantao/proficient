@@ -1,27 +1,23 @@
 {
-  "$schema": "..\\..\\..\\..\\node_modules\\nx\\schemas\\project-schema.json",
-  "sourceRoot": "packages/libs/services/specials/src",
-  "projectType": "library",
-  "targets": {
-    "lint": {
-      "executor": "@nrwl/linter:eslint",
-      "outputs": ["{options.outputFile}"],
-      "options": {
-        "lintFilePatterns": ["packages/libs/services/specials/**/*.ts"]
-      }
-    },
-    "test": {
-      "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/packages/libs/services/specials"],
-      "options": {
-        "jestConfig": "packages/libs/services/specials/jest.config.ts",
-        "passWithNoTests": true
-      }
-    }
-  },
-  "tags": [
-    "type:feature",
-    "scope:external",
-    "domain:server"
-  ]
+	"$schema": "..\\..\\..\\..\\node_modules\\nx\\schemas\\project-schema.json",
+	"sourceRoot": "packages/libs/services/specials/src",
+	"projectType": "library",
+	"targets": {
+		"lint": {
+			"executor": "@nrwl/linter:eslint",
+			"outputs": ["{options.outputFile}"],
+			"options": {
+				"lintFilePatterns": ["packages/libs/services/specials/**/*.ts"]
+			}
+		},
+		"test": {
+			"executor": "@nrwl/jest:jest",
+			"outputs": ["coverage/packages/libs/services/specials"],
+			"options": {
+				"jestConfig": "packages/libs/services/specials/jest.config.ts",
+				"passWithNoTests": true
+			}
+		}
+	},
+	"tags": ["type:feature", "scope:external", "domain:server"]
 }

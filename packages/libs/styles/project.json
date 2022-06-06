@@ -1,37 +1,33 @@
 {
-  "$schema": "..\\..\\..\\node_modules\\nx\\schemas\\project-schema.json",
-  "sourceRoot": "packages/libs/styles/src",
-  "projectType": "library",
-  "targets": {
-    "build": {
-      "executor": "@nrwl/js:tsc",
-      "outputs": ["{options.outputPath}"],
-      "options": {
-        "outputPath": "dist/packages/libs/styles",
-        "main": "packages/libs/styles/src/index.ts",
-        "tsConfig": "packages/libs/styles/tsconfig.lib.json",
-        "assets": ["packages/libs/styles/*.md"]
-      }
-    },
-    "lint": {
-      "executor": "@nrwl/linter:eslint",
-      "outputs": ["{options.outputFile}"],
-      "options": {
-        "lintFilePatterns": ["packages/libs/styles/**/*.ts"]
-      }
-    },
-    "test": {
-      "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/packages/libs/styles"],
-      "options": {
-        "jestConfig": "packages/libs/styles/jest.config.ts",
-        "passWithNoTests": true
-      }
-    }
-  },
-  "tags": [
-    "type:util",
-    "scope:shared",
-    "domain:shared"
-  ]
+	"$schema": "..\\..\\..\\node_modules\\nx\\schemas\\project-schema.json",
+	"sourceRoot": "packages/libs/styles/src",
+	"projectType": "library",
+	"targets": {
+		"build": {
+			"executor": "@nrwl/js:tsc",
+			"outputs": ["{options.outputPath}"],
+			"options": {
+				"outputPath": "dist/packages/libs/styles",
+				"main": "packages/libs/styles/src/index.ts",
+				"tsConfig": "packages/libs/styles/tsconfig.lib.json",
+				"assets": ["packages/libs/styles/*.md"]
+			}
+		},
+		"lint": {
+			"executor": "@nrwl/linter:eslint",
+			"outputs": ["{options.outputFile}"],
+			"options": {
+				"lintFilePatterns": ["packages/libs/styles/**/*.ts"]
+			}
+		},
+		"test": {
+			"executor": "@nrwl/jest:jest",
+			"outputs": ["coverage/packages/libs/styles"],
+			"options": {
+				"jestConfig": "packages/libs/styles/jest.config.ts",
+				"passWithNoTests": true
+			}
+		}
+	},
+	"tags": ["type:util", "scope:shared", "domain:shared"]
 }
