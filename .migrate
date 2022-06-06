@@ -1,9 +1,13 @@
 {
-  "lastRun": "1654287515255-add-specials-6-3.js",
+  "lastRun": "1654536984024-add-specials-6-6.js",
   "migrations": [
     {
       "title": "1654287515255-add-specials-6-3.js",
-      "timestamp": 1654287709478
+      "timestamp": 1654537447093
+    },
+    {
+      "title": "1654536984024-add-specials-6-6.js",
+      "timestamp": 1654537447759
     }
   ]
 }
