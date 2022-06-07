@@ -150,7 +150,7 @@ module.exports = [
         }
     },
     {
-        id: "S# 13123001-04",
+        id: "S# 22031601-04",
         title: "High power screw drive H4 RS135/135L (same as standard option C4506)",
         description: `Screw drive power is increased to turn the screw with 40% more torque at a peripheral screw speed of 0.80m/s  for a RS135/135L injection unit to achieve the following spec:
 

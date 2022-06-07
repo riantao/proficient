@@ -25,6 +25,7 @@ export const specials: Special[] = [
         attachments: [],
         boms: [],
         dwgs: [],
+        hpns: [],
         meta: {
             createdAt: new Date("05-05-2022"),
             updatedAt: new Date("05-05-2022")
@@ -60,6 +61,7 @@ export const specials: Special[] = [
         ],
         attachments: [],
         boms: [],
+        hpns: [],
         constraint: {
             clamp: ["H4L 400"],
             injection: []
@@ -97,6 +99,7 @@ export const specials: Special[] = [
                 date: new Date("05-07-2022")
             }
         ],
+        hpns: [],
         projects: [
             { id: "#344851", title: "H4L 500-RS95/95L" },
             { id: "#123908", title: "H4L 400-RS115/115" },
@@ -140,6 +143,7 @@ export const specials: Special[] = [
                 date: new Date("05-07-2022")
             }
         ],
+        hpns: [],
         projects: [
             { id: "#344851", title: "H4L 500-RS95/95L" },
             { id: "#123908", title: "H4L 400-RS115/115" },
@@ -188,6 +192,7 @@ export const specials: Special[] = [
             { id: "#123908", title: "H4L 400-RS115/115" },
             { id: "#488863", title: "HL 400-RS80/80" },
         ],
+        hpns: [],
         constraint: {
             clamp: ["H4L 400", "H4L 500"],
             injection: []
@@ -229,7 +234,8 @@ export const specials: Special[] = [
             { id: "#344851", title: "H4L 500-RS95/95L" },
             { id: "#123908", title: "H4L 400-RS115/115" },
             { id: "#488863", title: "HL 400-RS80/80" },
-        ]
+        ],
+        hpns: []
     },
     {
         id: "S#22050701-06",

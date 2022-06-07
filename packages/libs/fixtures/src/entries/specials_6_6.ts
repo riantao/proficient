@@ -771,7 +771,7 @@ export const specials: Special[] = [
         }
     },
     {
-        id: "S# 22050501-01",
+        id: "S# 22050401-01",
         title: "Add one servo core valve gates with independent control",
         description: `Prepare software package for field upgrade of machine SN 9761792.
 
