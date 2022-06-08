@@ -8,7 +8,9 @@ import { NotFoundError } from "@proficient/exceptions";
 
 
 export const makeSpecialsRepo = ({
-    dao
+    dao,
+    projection,
+    sort
 }: SpecialRepoDependencies): SpecialRepo => {
     /**
      * @function create
@@ -50,7 +52,7 @@ export const makeSpecialsRepo = ({
      */
     const findBy = async (filter: Filter<Special>): Promise<Special[] | null> => {
         try {
-            const specials = await dao.findAll(filter);
+            const specials = await dao.findAll(filter, { projection, sort });
 
             if(!specials.length)
                 return null;
