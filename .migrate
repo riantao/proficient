@@ -1,5 +1,5 @@
 {
-  "lastRun": "1654536984024-add-specials-6-6.js",
+  "lastRun": "1654696968975-add-specials-6-8.js",
   "migrations": [
     {
       "title": "1654287515255-add-specials-6-3.js",
@@ -8,6 +8,14 @@
     {
       "title": "1654536984024-add-specials-6-6.js",
       "timestamp": 1654537447759
+    },
+    {
+      "title": "1654617926137-add-specials-6-7.js",
+      "timestamp": 1654618174614
+    },
+    {
+      "title": "1654696968975-add-specials-6-8.js",
+      "timestamp": 1654697002848
     }
   ]
 }
