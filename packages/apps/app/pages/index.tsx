@@ -1,5 +1,4 @@
-import { Home } from "@proficient/features/home";
-import { Navigation } from "@proficient/features/navigation";
+import { Home, Navigation} from "../lib";
 
 Home.getLayout = page => (
     <Navigation

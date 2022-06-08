@@ -1,7 +1,7 @@
 import { GetStaticProps } from "next";
-import { Customers } from "@proficient/features/customers";
-import { customers as initialCustomers } from "@proficient/fixtures";
-import { Navigation } from "@proficient/features/navigation";
+import { Customers, Navigation } from "../../lib";
+
+const initialCustomers = [];
 
 export const getStaticProps: GetStaticProps = () => {
    return {

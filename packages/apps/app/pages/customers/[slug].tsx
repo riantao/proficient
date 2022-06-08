@@ -1,8 +1,8 @@
 import type { GetStaticPaths, GetStaticProps } from "next/types";
-import { customers } from "@proficient/fixtures";
-import { Customer } from "@proficient/features/customer";
-import { Navigation } from "@proficient/features/navigation";
+import { Customer, Navigation } from "../../lib";
 import { Customer as CustomerProps } from "@proficient/types";
+
+const customers = [];
 
 /**
  * 

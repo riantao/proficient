@@ -3,7 +3,7 @@ import type { AppProps } from "next/app";
 import { RecoilRoot } from "recoil";
 import { SWRConfig } from "swr";
 
-import { GlobalStyles } from "@proficient/styles";
+import { GlobalStyles } from "../lib";
 import { NextPageWithLayout } from "@proficient/types";
 
 const useLayout = ({ getLayout = (page => page) }: NextPageWithLayout) => ({ getLayout });
@@ -18,7 +18,7 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
       revalidateIfStale: false,
       revalidateOnFocus: false,
       revalidateOnReconnect: false,
-      revalidateOnMount: false
+      revalidateOnMount: false,
      }}>
       <RecoilRoot>
         <GlobalStyles />

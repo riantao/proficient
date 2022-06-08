@@ -1,7 +1,5 @@
 import { GetServerSideProps } from "next";
-import { Specials } from "@proficient/features/specials";
-import { Navigation } from "@proficient/features/navigation";
-import { fetchServerSideSpecials } from "@proficient/data-access";
+import { Specials, Navigation, fetchServerSideSpecials } from "../lib";
 import { uniqueBy } from "@proficient/utils";
 
 export const getServerSideProps: GetServerSideProps = async () => {
