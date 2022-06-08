@@ -1,30 +1,20 @@
 {
-  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
-  "version": 2,
-  "projects": {
-    "apps-api": "packages/apps/api",
-    "apps-app": "packages/apps/app",
-    "apps-app-e2e": "packages/apps/app-e2e",
-    "libs-adapters": "packages/libs/adapters",
-    "libs-components": "packages/libs/components",
-    "libs-data-access": "packages/libs/data-access",
-    "libs-entities": "packages/libs/entities",
-    "libs-exceptions": "packages/libs/exceptions",
-    "libs-features-customer": "packages/libs/features/customer",
-    "libs-features-customers": "packages/libs/features/customers",
-    "libs-features-home": "packages/libs/features/home",
-    "libs-features-navigation": "packages/libs/features/navigation",
-    "libs-features-specials": "packages/libs/features/specials",
-    "libs-fixtures": "packages/libs/fixtures",
-    "libs-functions": "packages/libs/functions",
-    "libs-hooks": "packages/libs/hooks",
-    "libs-interactors": "packages/libs/interactors",
-    "libs-services-customers": "packages/libs/services/customers",
-    "libs-services-projects": "packages/libs/services/projects",
-    "libs-services-specials": "packages/libs/services/specials",
-    "libs-services-users": "packages/libs/services/users",
-    "libs-styles": "packages/libs/styles",
-    "libs-types": "packages/libs/types",
-    "libs-utils": "packages/libs/utils"
-  }
+	"$schema": "./node_modules/nx/schemas/workspace-schema.json",
+	"version": 2,
+	"projects": {
+		"apps-api": "packages/apps/api",
+		"apps-app": "packages/apps/app",
+		"apps-app-e2e": "packages/apps/app-e2e",
+		"libs-adapters": "packages/libs/adapters",
+		"libs-entities": "packages/libs/entities",
+		"libs-exceptions": "packages/libs/exceptions",
+		"libs-functions": "packages/libs/functions",
+		"libs-interactors": "packages/libs/interactors",
+		"libs-services-customers": "packages/libs/services/customers",
+		"libs-services-projects": "packages/libs/services/projects",
+		"libs-services-specials": "packages/libs/services/specials",
+		"libs-services-users": "packages/libs/services/users",
+		"libs-types": "packages/libs/types",
+		"libs-utils": "packages/libs/utils"
+	}
 }
