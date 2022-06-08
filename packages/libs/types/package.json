@@ -1,5 +1,5 @@
 {
-  "name": "@proficient/libs-types",
-  "version": "0.0.1",
-  "type": "commonjs"
+	"name": "@proficient/types",
+	"version": "0.0.1",
+	"type": "commonjs"
 }

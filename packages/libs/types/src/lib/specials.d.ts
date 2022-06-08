@@ -37,8 +37,14 @@ interface SpecialBase<DateForm extends Date | string = string> extends DataWithM
     readonly constraint: SpecialConstraint;
     /** attachments for the specials, including drawings, BOMS, etc */
     readonly attachments: SpecialAttachment[];
+    /** Denotes whether the special is budgetary */ 
+    readonly isBudgetary?: boolean;
+    /** List of drawing numbers */
     readonly dwgs: string[];
+    /** List of BOMs referenced in the special */
     readonly boms: string[]; 
+    /** List of HPNs referenced in the special */
+    readonly hpns: string[];
 }
 
 export type SpecialInfo = EntityInfo & SpecialBase<string>;
