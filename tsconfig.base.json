@@ -1,59 +1,59 @@
 {
-  "compileOnSave": false,
-  "compilerOptions": {
-    "rootDir": ".",
-    "sourceMap": true,
-    "declaration": false,
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "importHelpers": true,
-    "esModuleInterop": true,
-    "target": "es2015",
-    "module": "esnext",
-    "lib": ["es2017", "dom"],
-    "skipLibCheck": true,
-    "skipDefaultLibCheck": true,
-    "baseUrl": ".",
-    "paths": {
-      "@proficient/adapters": ["packages/libs/adapters/src/index.ts"],
-      "@proficient/components": ["packages/libs/components/src/index.ts"],
-      "@proficient/data-access": ["packages/libs/data-access/src/index.ts"],
-      "@proficient/entities": ["packages/libs/entities/src/index.ts"],
-      "@proficient/exceptions": ["packages/libs/exceptions/src/index.ts"],
-      "@proficient/features/customer": [
-        "packages/libs/features/customer/src/index.ts"
-      ],
-      "@proficient/features/customers": [
-        "packages/libs/features/customers/src/index.ts"
-      ],
-      "@proficient/features/home": ["packages/libs/features/home/src/index.ts"],
-      "@proficient/features/navigation": [
-        "packages/libs/features/navigation/src/index.ts"
-      ],
-      "@proficient/features/specials": [
-        "packages/libs/features/specials/src/index.ts"
-      ],
-      "@proficient/fixtures": ["packages/libs/fixtures/src/index.ts"],
-      "@proficient/functions": ["packages/libs/functions/src/index.ts"],
-      "@proficient/hooks": ["packages/libs/hooks/src/index.ts"],
-      "@proficient/interactors": ["packages/libs/interactors/src/index.ts"],
-      "@proficient/services/customers": [
-        "packages/libs/services/customers/src/index.ts"
-      ],
-      "@proficient/services/projects": [
-        "packages/libs/services/projects/src/index.ts"
-      ],
-      "@proficient/services/specials": [
-        "packages/libs/services/specials/src/index.ts"
-      ],
-      "@proficient/services/users": [
-        "packages/libs/services/users/src/index.ts"
-      ],
-      "@proficient/styles": ["packages/libs/styles/src/index.ts"],
-      "@proficient/types": ["packages/libs/types/src/index.ts"],
-      "@proficient/utils": ["packages/libs/utils/src/index.ts"]
-    }
-  },
-  "exclude": ["node_modules", "tmp"]
+	"compileOnSave": false,
+	"compilerOptions": {
+		"rootDir": ".",
+		"sourceMap": true,
+		"declaration": false,
+		"moduleResolution": "node",
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"importHelpers": true,
+		"esModuleInterop": true,
+		"target": "es2015",
+		"module": "esnext",
+		"lib": ["ESNext", "DOM"],
+		"skipLibCheck": true,
+		"skipDefaultLibCheck": true,
+		"baseUrl": ".",
+		"paths": {
+			"@proficient/adapters": ["packages/libs/adapters/src/index.ts"],
+			"@proficient/components": ["packages/libs/components/src/index.ts"],
+			"@proficient/data-access": ["packages/libs/data-access/src/index.ts"],
+			"@proficient/entities": ["packages/libs/entities/src/index.ts"],
+			"@proficient/exceptions": ["packages/libs/exceptions/src/index.ts"],
+			"@proficient/features/customer": [
+				"packages/libs/features/customer/src/index.ts"
+			],
+			"@proficient/features/customers": [
+				"packages/libs/features/customers/src/index.ts"
+			],
+			"@proficient/features/home": ["packages/libs/features/home/src/index.ts"],
+			"@proficient/features/navigation": [
+				"packages/libs/features/navigation/src/index.ts"
+			],
+			"@proficient/features/specials": [
+				"packages/libs/features/specials/src/index.ts"
+			],
+			"@proficient/fixtures": ["packages/libs/fixtures/src/index.ts"],
+			"@proficient/functions": ["packages/libs/functions/src/index.ts"],
+			"@proficient/hooks": ["packages/libs/hooks/src/index.ts"],
+			"@proficient/interactors": ["packages/libs/interactors/src/index.ts"],
+			"@proficient/services/customers": [
+				"packages/libs/services/customers/src/index.ts"
+			],
+			"@proficient/services/projects": [
+				"packages/libs/services/projects/src/index.ts"
+			],
+			"@proficient/services/specials": [
+				"packages/libs/services/specials/src/index.ts"
+			],
+			"@proficient/services/users": [
+				"packages/libs/services/users/src/index.ts"
+			],
+			"@proficient/styles": ["packages/libs/styles/src/index.ts"],
+			"@proficient/types": ["packages/libs/types/src/index.ts"],
+			"@proficient/utils": ["packages/libs/utils/src/index.ts"]
+		}
+	},
+	"exclude": ["node_modules", "tmp"]
 }
